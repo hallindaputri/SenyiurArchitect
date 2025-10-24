@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senyiur Architect | Proyek Kami</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 🎯 HEADER PREMIUM -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Senyiur Architect" class="logo-image">
+                <span class="logo-text">Senyiur Architect</span>
+            </div>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html" data-lang-id="home">Beranda</a></li>
+                    <li><a href="about.html" data-lang-id="about">Tentang</a></li>
+                    <li><a href="projects.html" class="active" data-lang-id="projects">Proyek</a></li>
+                    <li><a href="contact.html" data-lang-id="contact">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" id="langID">ID</button>
+                    <button class="lang-btn" id="langEN">EN</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 📱 MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html" data-lang-id="home">Beranda</a></li>
+                <li><a href="about.html" data-lang-id="about">Tentang</a></li>
+                <li><a href="projects.html" data-lang-id="projects">Proyek</a></li>
+                <li><a href="contact.php" data-lang-id="contact">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 🌟 PROJECTS HERO SECTION -->
+    <section class="projects-hero">
+        <div class="projects-hero-text">
+            <h1 data-lang-id="projects-title">Proyek Kami</h1>
+            <p data-lang-id="projects-subtitle">Koleksi desain arsitektur pilihan kami — di mana kemewahan bertemu
+                kesederhanaan.</p>
+        </div>
+    </section>
+
+    <!-- 🎨 PROJECTS FILTER SECTION -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✨ PROJECTS GALLERY SECTION -->
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="residential">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Tropical Modern Villa">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-lang-id="proj1-title">Tropical Modern Villa</h3>
+                                <p data-lang-id="proj1-desc">Bali, Indonesia – 2024</p>
+                                <div class="project-tags">
+                                    <span class="tag">Residential</span>
+                                    <span class="tag">Modern</span>
+                                </div>
+                            </div>
+                            <a href="#" class="project-link">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item" data-category="residential">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Minimalist Family House">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-lang-id="proj2-title">Minimalist Family House</h3>
+                                <p data-lang-id="proj2-desc">Bandung, Indonesia – 2023</p>
+                                <div class="project-tags">
+                                    <span class="tag">Residential</span>
+                                    <span class="tag">Minimalist</span>
+                                </div>
+                            </div>
+                            <a href="#" class="project-link">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" data-category="commercial">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Urban Nature Residence">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-lang-id="proj3-title">Urban Nature Residence</h3>
+                                <p data-lang-id="proj3-desc">Jakarta, Indonesia – 2022</p>
+                                <div class="project-tags">
+                                    <span class="tag">Commercial</span>
+                                    <span class="tag">Eco-Friendly</span>
+                                </div>
+                            </div>
+                            <a href="#" class="project-link">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item" data-category="interior">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="Luxury Apartment Interior">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Luxury Apartment Interior</h3>
+                                <p>Jakarta, Indonesia – 2024</p>
+                                <div class="project-tags">
+                                    <span class="tag">Interior</span>
+                                    <span class="tag">Luxury</span>
+                                </div>
+                            </div>
+                            <a href="#" class="project-link">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item" data-category="commercial">
+                    <div class="project-image">
+                        <img src="images/project5.jpg" alt="Office Building Design">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Modern Office Building</h3>
+                                <p>Surabaya, Indonesia – 2023</p>
+                                <div class="project-tags">
+                                    <span class="tag">Commercial</span>
+                                    <span class="tag">Modern</span>
+                                </div>
+                            </div>
+                            <a href="#" class="project-link">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item" data-category="landscape">
+                    <div class="project-image">
+                        <img src="images/project6.jpg" alt="Garden Landscape">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Tropical Garden Landscape</h3>
+                                <p>Bogor, Indonesia – 2023</p>
+                                <div class="project-tags">
+                                    <span class="tag">Landscape</span>
+                                    <span class="tag">Tropical</span>
+                                </div>
+                            </div>
+                            <a href="#" class="project-link">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📊 PROJECTS STATS SECTION -->
+    <section class="projects-stats">
+        <div class="container">
+            <div class="stats-content">
+                <h2>Dalam Angka</h2>
+                <p>Pencapaian kami dalam berbagai proyek arsitektur</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Proyek Selesai</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Kota di Indonesia</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Kepuasan Klien</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Penghargaan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 CTA SECTION -->
+    <section class="projects-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Siap Mewujudkan Proyek Impian Anda?</h2>
+                <p>Mari diskusikan ide dan visi Anda bersama tim profesional kami</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Konsultasi Gratis</a>
+                    <a href="about.html" class="btn btn-secondary">Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🦶 FOOTER PREMIUM -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🏛️</span>
+                        <span class="logo-text">Senyiur</span>
+                    </div>
+                    <p data-lang-id="footer-desc">Studio arsitektur yang menghadirkan desain inovatif dan berkelanjutan.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-lang-id="footer-quick">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang-id="home">Beranda</a></li>
+                        <li><a href="about.html" data-lang-id="about">Tentang</a></li>
+                        <li><a href="projects.html" data-lang-id="projects">Proyek</a></li>
+                        <li><a href="contact.html" data-lang-id="contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-lang-id="footer-contact-title">Kontak</h4>
+                    <p>📧 info@senyiur.com</p>
+                    <p>📞 +62 812 3456 7890</p>
+                    <p>📍 Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Senyiur Architect | <span data-lang-id="footer">Dibuat dengan dedikasi dan estetika.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Projects Filter Functionality - SIMPLIFIED
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    projectItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Remove all problematic animations
+            projectItems.forEach(item => {
+                item.style.opacity = "1";
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senyiur Architect | Kontak Kami</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER & CONTENT SAMA PERSIS DENGAN CONTACT.PHP -->
+    <!-- TAPI HAPUS SEMUA KODE PHP -->
+
+    <!-- Ganti bagian form dengan ini: -->
+    <div class="contact-form-wrapper">
+        <div class="form-header">
+            <h2>Konsultasi Gratis</h2>
+            <p>Isi form berikut dan kami akan menghubungi Anda dalam 24 jam</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <!-- Form fields sama -->
+            <div class="form-group">
+                <label for="name">Nama Lengkap *</label>
+                <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
+            </div>
+            <!-- ... field lainnya ... -->
+
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Kirim Pesan</span>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript untuk simulasi form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Pesan berhasil dikirim! (Ini simulasi, untuk versi PHP butuh web server)');
+        });
+    </script>
+
+    <script>
+        // AJAX SUBMIT UNTUK MENGGUNAKAN API PHP
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Mencegah form memuat ulang halaman
+
+            const form = e.target;
+            const button = form.querySelector('.submit-btn');
+            const originalButtonText = button.textContent;
+
+            // Menunjukkan loading
+            button.textContent = 'Mengirim...';
+            button.disabled = true;
+
+            const formData = new FormData(form);
+
+            fetch('api/send_email.php', { // Target file PHP
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Sukses! ' + data.message);
+                        form.reset(); // Mengosongkan formulir setelah sukses
+                    } else {
+                        alert('Gagal! ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Terjadi kesalahan koneksi. Silakan coba lagi.');
+                })
+                .finally(() => {
+                    // Mengembalikan tombol ke keadaan semula
+                    button.textContent = originalButtonText;
+                    button.disabled = false;
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senyiur Architect | Premium Architecture Studio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 🎯 HEADER PREMIUM -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Senyiur Architect" class="logo-image">
+                <span class="logo-text">Senyiur Architect</span>
+            </div>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html" class="active" data-lang-id="home">Beranda</a></li>
+                    <li><a href="about.html" data-lang-id="about">Tentang</a></li>
+                    <li><a href="projects.html" data-lang-id="projects">Proyek</a></li>
+                    <li><a href="contact.html" data-lang-id="contact">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-toggle">
+                    <button id="langID" class="lang-btn active">ID</button>
+                    <button id="langEN" class="lang-btn">EN</button>
+                </div>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" id="langID">ID</button>
+                    <button class="lang-btn" id="langEN">EN</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 📱 MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul>
+                <li><a href="index.html" data-lang-id="home">Beranda</a></li>
+                <li><a href="about.html" data-lang-id="about">Tentang</a></li>
+                <li><a href="projects.html" data-lang-id="projects">Proyek</a></li>
+                <li><a href="contact.html" data-lang-id="contact">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 🌟 HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-lang-id="hero-title">Mewujudkan Arsitektur Bernilai Seni & Fungsional</h1>
+                <p data-lang-id="hero-desc">Kami merancang ruang yang hidup, indah, dan berkelanjutan untuk masa depan
+                    yang lebih baik.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary" data-lang-id="hero-btn">Lihat Proyek Kami</a>
+                    <a href="contact.html" class="btn btn-secondary" data-lang-id="hero-btn2">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- ✨ FEATURED PROJECTS SECTION -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-lang-id="projects-label">Proyek Unggulan</span>
+                <h2 data-lang-id="projects-title">Karya Terbaru Kami</h2>
+                <p data-lang-id="projects-subtitle">Eksplorasi inovasi dalam setiap desain yang kami ciptakan</p>
+            </div>
+
+            <div class="projects-showcase">
+                <div class="project-main">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Tropical Modern Villa">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 data-lang-id="proj1-title">Tropical Modern Villa</h3>
+                                <p data-lang-id="proj1-desc">Bali, Indonesia – 2024</p>
+                                <a href="projects.html" class="project-link">Lihat Proyek</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-side">
+                    <div class="project-small">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Minimalist Family House">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 data-lang-id="proj2-title">Minimalist Family House</h3>
+                                    <p>Bandung, Indonesia – 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-small">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Urban Nature Residence">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 data-lang-id="proj3-title">Urban Nature Residence</h3>
+                                    <p>Jakarta, Indonesia – 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <a href="projects.html" class="btn btn-secondary">Lihat Semua Proyek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✨ SERVICES SECTION -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-lang-id="services-label">Layanan</span>
+                <h2 data-lang-id="services-title">Keahlian Kami</h2>
+                <p data-lang-id="services-subtitle">Solusi arsitektur terpadu dari konsep hingga realisasi</p>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <div class="service-image">
+                        <img src="images/service1.jpg" alt="Desain Arsitektur">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-lang-id="service1">Desain Arsitektur</h3>
+                        <p data-lang-id="service1-desc">Kami menghadirkan desain modern dan alami yang merefleksikan
+                            karakter klien dengan sentuhan inovatif.</p>
+                        <a href="projects.html" class="service-link" data-lang-id="service-link">Lihat Detail →</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛋️</div>
+                    <div class="service-image">
+                        <img src="images/service2.jpg" alt="Interior">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-lang-id="service2">Desain Interior</h3>
+                        <p data-lang-id="service2-desc">Menciptakan ruang dalam yang nyaman, fungsional, dan berestetika
+                            tinggi dengan material berkualitas.</p>
+                        <a href="projects.html" class="service-link" data-lang-id="service-link">Lihat Detail →</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <div class="service-image">
+                        <img src="images/service3.jpg" alt="Konsultasi">
+                    </div>
+                    <div class="service-content">
+                        <h3 data-lang-id="service3">Konsultasi Desain</h3>
+                        <p data-lang-id="service3-desc">Memberikan solusi arsitektur profesional sesuai kebutuhan dan
+                            gaya hidup Anda dengan pendekatan personal.</p>
+                        <a href="contact.html" class="service-link" data-lang-id="service-link">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📊 STATS SECTION -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label" data-lang-id="stat1">Proyek Selesai</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label" data-lang-id="stat2">Kepuasan Klien</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label" data-lang-id="stat3">Tahun Pengalaman</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label" data-lang-id="stat4">Penghargaan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimoni</span>
+                <h2>Apa Kata Klien Kami</h2>
+                <p>Pengalaman nyata dari mereka yang telah mempercayakan proyeknya kepada kami</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Desain rumah yang dibuat oleh Senyiur Architect beyond our expectations. Mereka benar-benar
+                            memahami kebutuhan keluarga kami."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Budi Santoso</h4>
+                        <p>Klien Residential, Jakarta</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professionalisme dan perhatian terhadap detail sangat impressive. Hasil akhirnya persis
+                            seperti yang kami bayangkan."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah Wijaya</h4>
+                        <p>Klien Commercial, Bandung</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Proses dari konsep hingga eksekusi sangat smooth. Timnya responsive dan penuh ide-ide
+                            kreatif."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Andre Kurniawan</h4>
+                        <p>Klien Interior, Bali</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🖼️ CTA SECTION -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang-id="cta-title">Mari Wujudkan Proyek Impian Anda</h2>
+                <p data-lang-id="cta-desc">Konsultasikan ide arsitektur Anda bersama tim profesional kami</p>
+                <a href="contact.html" class="btn btn-light" data-lang-id="cta-btn">Hubungi Kami Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🦶 FOOTER PREMIUM -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🏛️</span>
+                        <span class="logo-text">Senyiur</span>
+                    </div>
+                    <p data-lang-id="footer-desc">Studio arsitektur yang menghadirkan desain inovatif dan berkelanjutan.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-lang-id="footer-quick">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang-id="home">Beranda</a></li>
+                        <li><a href="about.html" data-lang-id="about">Tentang</a></li>
+                        <li><a href="projects.html" data-lang-id="projects">Proyek</a></li>
+                        <li><a href="contact.html" data-lang-id="contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-lang-id="footer-contact-title">Kontak</h4>
+                    <p>📧 info@senyiur.com</p>
+                    <p>📞 +62 812 3456 7890</p>
+                    <p>📍 Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Senyiur Architect | <span data-lang-id="footer">Dibuat dengan dedikasi dan estetika.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
